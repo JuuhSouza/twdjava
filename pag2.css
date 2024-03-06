@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: fonte;
+    src: url(fonte/Feta\ Morgana.otf);
+    
+    }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(https://wallpaperaccess.com/full/1810873.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: fonte;
+    
+}
+
+/* menu */
+.menu li{
+    display: inline-block;
+    font-size: 15px;
+    margin:0 20px;
+    padding: 1em;
+    font-family: fonte;
+}
+
+.menu li a{
+    font-size: 3em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out; 
+    
+    
+}
+
+.menu li a:hover{
+    padding: 14px;
+    border-radius: 2em;
+    box-shadow: 0 0 25px #000000;
+    
+}
+
+
+/* final menu */
+
+h1{
+    box-shadow: 0 0 25px #000000;
+    font-size:3em ;
+   border-radius: 20%;
+   padding: 1em ;
+
+}
+
+/*  quiz sobre o jogo*/
+.quiz-container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.quiz-container h1{
+    color: rgb(0, 0, 0);
+    text-shadow: 0 2px 10px #888C65;
+}
+
+#pergunta{
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: aliceblue;
+    text-shadow: 0 2px 10px rgb(4, 112, 0);
+}
+
+#opcoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+
+}
+
+button{
+    padding: 20px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #888C65;
+    border: 2px solid #000000;
+    color: rgb(255, 255, 255);
+    transition: all 0.4s ease-in-out;
+    border-radius: 10px;
+    
+
+}
+
+button:hover{
+    box-shadow: 0 0 25px #000000;
+}
+
+
+.correto{
+    background-color:rgb(47, 119, 41) ;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    font-size: 1.3em;
+    border-radius: 20%;
+    margin-top: 1em;
+}
+
+.incorreto {
+    background-color: rgb(122, 6, 6);
+    color: aliceblue;
+    padding: 1em;
+    font-size: 1.3em;
+    border-radius: 20%;
+    margin-top: 1em;
+}
+
+/*  final quiz sobre o jogo*/
+
+footer{
+    font-size: 1.2em;
+    box-shadow: 2px 2px 24px #888C65 ;
+    color: aliceblue;
+    padding: 1em;
+    margin-top: 25em;
+    font-family: fonte;
+}
+
+

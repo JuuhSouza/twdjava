@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: fonte;
+    src: url(fonte/Feta\ Morgana.otf);
+    
+    }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(https://4.bp.blogspot.com/-yDOvdr5hIbw/V7ixgmUj3FI/AAAAAAAABGE/Vz7daBwng3kJi5G4cweFCdcvcaypE_zHgCLcB/s1600/Apocalipse%2B1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    
+    
+    
+}
+
+/* menu */
+.menu li{
+    display: inline-block;
+    font-size: 15px;
+    margin:0 20px;
+    padding: 1em;
+    font-family: fonte;
+}
+
+.menu li a{
+    font-size: 3em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out; 
+    
+    
+}
+
+.menu li a:hover{
+    padding: 14px;
+    border-radius: 2em;
+    box-shadow: 0 0 25px #000000;
+    
+}
+
+/* final menu */
+
+
+/* card */
+
+.contai {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2em;
+
+}
+
+
+.card{
+/* padding: 2em; */
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 2em;
+margin-bottom: 3em;
+background: linear-gradient(90deg, rgba(136,140,101,1) 48%, rgba(252,176,69,0.3085609243697479) 68%);
+
+border-radius: 2em;
+text-align: center;
+
+}
+
+.card h3{
+margin-bottom: 2.3em;
+font-family: fonte;
+color: aliceblue;
+font-size: 2em;
+text-shadow: 2px 2px 3px black;
+
+}
+
+.card p{
+    text-shadow: 2px 1px 3px rgb(255, 255, 255);
+    font-size: 1.3em;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card img{
+    padding: 2em;
+    height: 30em;
+    width: 30em;
+    
+
+}
+
+img{
+    border-radius: 2em;
+    width: 100%;
+    
+
+}
+
+.card:nth-child(even) img{
+order: 2;
+}
+
+.card div{
+    padding: 2em;
+}
+
+
+/* final card */
+
+/* texto */
+
+.texto h2{
+    font-size: 2em;
+    padding: 1em;
+    color: aliceblue;
+    
+
+}
+
+.texto p{
+    font-size: 1.3em;
+    box-shadow: 2px 2px 24px #626060 ;
+    color: aliceblue;
+    text-shadow: 2px 2px 3px black;
+    letter-spacing: 3px;
+    padding:30px;
+    text-align: center;
+    
+}
+
+/* final texto */
+
+/* imagem */
+.galeria {
+
+    margin: 1em;
+    display: flex;
+    height: 25em;
+    gap: 1em;
+
+}
+
+.galeria div{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   /* background-position: 100%; */
+   flex: 1;
+   transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1)
+}
+
+.galeria div:hover{
+    flex:3;
+    border-radius: 2em;
+}
+
+.galeria:hover div:not(:hover){
+    filter: grayscale(10) blur(2px);
+}
+
+
+/* final imagem */
+
+footer{
+    font-size: 1.2em;
+    font-family: fonte;
+    box-shadow: 2px 2px 40px #888C65 ;
+    background-color: #626060;
+    margin: 4em;
+    padding: 1em;
+    border-radius:2em ;
+    color: aliceblue;
+}
